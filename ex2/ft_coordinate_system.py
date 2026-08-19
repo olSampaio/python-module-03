@@ -1,8 +1,10 @@
 import math
 
+
 def get_player_pos():
-    while True:        
-        coordinates = input("Enter new coordinates as floats in format 'x,y,z': ")
+    while True:
+        coordinates = input("Enter new coordinates as"
+                            " floats in format 'x,y,z': ")
         values = coordinates.split(",")
 
         if len(values) != 3:
@@ -26,6 +28,7 @@ def get_player_pos():
             continue
 
         return (x, y, z)
+
 
 def main():
     print("=== Game Coordinate System ===")
@@ -54,6 +57,7 @@ def main():
     )
 
     print(f"Distance between the 2 sets of coordinates: {round(distance, 4)}")
+
 
 if (__name__ == "__main__"):
     main()
